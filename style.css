@@ -1,0 +1,142 @@
+:root {
+   --bright-orange: hsl(31, 77%, 52%);
+   --dark-cyan: hsl(184, 100%, 22%);
+   --very-dark-cyan: hsl(179, 100%, 13%);
+   /* For paragraphs */
+   --transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* For background, headings, buttons */
+   --very-light-grey: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+button {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+}
+
+.main-section {
+    min-height: calc(100vh - 1px);
+    background-color: hsl(0, 0%, 95%);
+    padding: 80px 25px;
+}
+
+.container {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+img {
+    margin-bottom: 30px;
+}
+
+h1, h2 {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: var(--very-light-grey);
+    margin-bottom: 20px;
+}
+
+p {
+    color: var(--transparent-white);
+    margin-bottom: 25px;
+    word-spacing: 4px;
+    line-height: 1.5;
+}
+
+.btn {
+    background-color: #fff;
+    padding: 13px 35px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all o.4s ease-in-out;
+}
+
+
+.item {
+    padding: 45px;
+}
+
+/* Item 1 */
+
+.item-1 {
+    background-color: var(--bright-orange);
+}
+
+.item-1 .btn {
+    color: var(--bright-orange);
+}
+
+
+/* Item 2 */
+
+.item-2 {
+    background-color: var(--dark-cyan);
+}
+
+.item-2 .btn {
+    color: var(--dark-cyan);
+}
+
+/* Item 3 */
+
+.item-3 {
+    background-color: var(--very-dark-cyan);
+}
+
+.item-3 .btn {
+    color: var(--very-dark-cyan);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 992px){
+    .main-section {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .container {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+
+    .btn {
+        margin-top: 80px;
+    }
+
+    p {
+        margin-top: 40px;
+        word-spacing: 1;
+        line-height: 1.8;
+    }
+    
+    .item {
+        padding: 50px 40px;
+        width: 325px;
+    }
+
+}
